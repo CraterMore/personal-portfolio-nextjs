@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
+  --background: #f5f7ff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-background: #f5f7ff;
+  --color-text: #00030f;
+  --color-primary: #b1eb9e;
+  --color-secondary: #7edafb;
+  --color-accent: #235b53;
+  --color-secondary-gray: #d1e3f0;
+  --color-primary-gray: #dae4d7;
+  --font-heading: 'Roboto', serif;
+  --font-body: 'Figtree', sans-serif;
+  --font-logo: 'Josefin Sans', sans-serif;
+  --text-sm: 0.750rem;
+  --text-base: 1rem;
+  --text-xl: 1.333rem;
+  --text-2xl: 1.777rem;
+  --text-3xl: 2.369rem;
+  --text-4xl: 3.158rem;
+  --text-5xl: 4.210rem;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-light: 300;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer components {
+    .btn-primary {
+        @apply bg-secondary rounded-full border-2 border-b-text text-xl font-semibold w-fit px-3 py-1;
+    }
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'Figtree', Arial, sans-serif; */
 }

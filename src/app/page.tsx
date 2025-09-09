@@ -1,103 +1,81 @@
 import Image from "next/image";
+import HomeImageSplash from "/public/images/HomeImageSplash.png";
+import HeroPage from "/public/images/soft-eng/hero-page.png";
+import Github from "/public/images/github.png";
+import LinkedIn from "/public/images/linkedin.png";
+import Dribbble from "/public/images/dribbble-icon.svg";
+import Email from "/public/images/email.png";
+import Globe from "/public/images/globe.png";
+import NavBar from "./components/nav-bar";
+import CarterWordmark from "/public/carter-wordmark.svg";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main>
+        <section className="md:flex flex-row justify-between px-10">
+            <div className="md:max-w-lg self-end">
+                <Image className="w-fit h-auto" src={HomeImageSplash} alt="Home Image Splash"/>
+            </div>
+            <div className="flex flex-col self-center items-center md:items-start md:max-w-xl gap-3">
+                <h1 className="font-heading font-bold text-4xl text-center md:text-left leading-tight mt-4">
+                    Hi, my name is
+                    <Image className="w-32 ml-4 -translate-y-1 inline" src={CarterWordmark} alt="Carter"/>
+                    </h1>
+                
+                <p className="text-xl text-center md:text-left">I am a senior at Worcester Polytechnic Institute majoring in Computer Science with a passion for graphic design. My interests include UX, software engineering, and design.</p>
+                <a className="btn-primary mb-4 transition ease-in-out duration-150 hover:-translate-y-1" href="/work">Learn more</a>
+            </div>
+        </section>
+        <div className="w-full h-2 bg-accent"></div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+        <div className="my-4 mx-auto md:ml-4 bg-primary rounded-xl border-2 border-r-text text-2xl font-bold font-heading w-fit px-3 py-1">
+            Featured Work
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="md:flex flex-row justify-between px-10 md:my-6">
+            <div className="md:max-w-lg max-w-md mx-auto self-center md:mx-0 md:mr-4 md:my-8  p-2">
+                <Image className="w-full h-full object-contain -rotate-3" src={HeroPage} alt="React App for Hospital"/>
+            </div>
+            <div className="flex flex-col self-center items-center md:items-start md:max-w-xl gap-3">
+                <h1 className="font-heading font-bold text-4xl text-center md:text-left leading-tight mt-4">React App for Hospital</h1>
+                <p className="text-xl text-center md:text-left mb-2">A React web app prototype that was developed in 7 weeks using Agile methodologies for Brigham and Women's Hospital. The project significantly improved my skills in web development, databases, UI/UX, and version control.</p>
+                <div className="flex gap-2">
+                    <a className="btn-primary mb-4 transition ease-in-out duration-150 hover:-translate-y-1" href="/work/hospital-app.html">Read more</a>
+                </div>
+                <p className="text-accent mb-4 text-center">React Web Development · Agile Methodology · Design Patterns · UI and UX</p>
+            </div>
+        </div>
+        <div className="w-full h-2 bg-accent"></div>
+
+        <div className="my-4 mx-auto md:mr-4 md:ml-auto bg-primary rounded-xl border-2 border-r-text text-2xl font-bold font-heading w-fit px-3 py-1">
+            Links & Social Media
+        </div>
+        <div className="md:flex flex-row justify-between px-10">
+            <div className="flex flex-col self-center items-center md:items-start md:max-w-xl gap-3">
+                <h1 className="font-heading font-bold text-4xl text-center md:text-left leading-tight mt-4">Wait, don't go!</h1>
+                <p className="text-xl text-center md:text-left mb-2">Whether it's software development or branding, let's get to know each other! You can view my work on GitHub and Dribbble, or get in contact via LinkedIn or email.</p>
+                <div className="flex gap-2">
+                    <a className="btn-primary p-[6px] m-0 h-fit transition ease-in-out duration-150 hover:-translate-y-1" href="https://github.com/CraterMore">
+                        <Image src={Github} className="size-[1.8rem]" alt="GitHub"/>
+                    </a>
+                    <a className="btn-primary p-[6px] m-0 h-fit transition ease-in-out duration-150 hover:-translate-y-1" href="https://www.linkedin.com/in/carter-moore-239954261/">
+                        <Image src={LinkedIn} className="size-[1.8rem]" alt="LinkedIn"/>
+                    </a>
+                    <a className="btn-primary p-[6px] m-0 h-fit transition ease-in-out duration-150 hover:-translate-y-1" href="https://dribbble.com/Crater14">
+                        <Image src={Dribbble} className="size-[1.8rem]" alt="Dribbble"/>
+                    </a>
+                    <a className="btn-primary p-[6px] m-0 h-[44.8px] flex w-fit transition ease-in-out duration-150 hover:-translate-y-1" href="mailto:ctm6704@gmail.com">
+                        <Image src={Email} className="size-[1.8rem]" alt="Email"/>
+                        <p className="font-semibold px-1 my-auto text-base hidden md:block">ctm6704@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+            <div className="md:max-w-md px-12 py-8 object-center my-auto">
+                <Image className="object-cover" src={Globe} alt="Globe"/>
+            </div>
+        </div>
+        
+    
+</main>
   );
 }
