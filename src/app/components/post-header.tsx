@@ -1,4 +1,4 @@
-export default function PostHeader(props: { context: string, title: string, date: string }) {
+export default function PostHeader(props: { context: string, title: string, date: string, tags: string[] }) {
   return (
     <header>
         <div className="flex flex-col items-center">
@@ -8,6 +8,9 @@ export default function PostHeader(props: { context: string, title: string, date
                 <p className="md:max-w-lg text-xl text-center px-4 font-light mb-5">{props.date}</p>
         </div>
         <div className="w-full h-2 bg-accent"></div>
+        {props.tags.length > 0 && (
+          <p className="text-accent my-4 text-center">{props.tags.join(" · ")}</p>
+        )}
     </header>
   );
 }

@@ -20,5 +20,9 @@
 }
 
 .markdown em {
-  @apply font-light;
+  @apply text-[1rem];
+}
+
+.markdown img {
+  @apply rounded-2xl my-4;
 }

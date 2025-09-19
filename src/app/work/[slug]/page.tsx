@@ -24,7 +24,7 @@ export default async function WorkPost(props: Params) {
 
   return (
     <main>
-        <PostHeader context={post.contextShort} title={post.title} date={post.date} />
+        <PostHeader context={post.contextShort} title={post.title} date={post.date} tags={post.tags || []} />
         <PostBody content={content} />
     </main>
   )
