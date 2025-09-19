@@ -4,8 +4,12 @@ import WordleScreenshot from "/public/images/wordleScreenshot.jpeg";
 import Advertisement from "/public/images/Advertisement.png";
 import Dribbble from "/public/images/dribbble-icon.svg";
 import ArrowUp from "/public/images/arrow-small-up.png";
+import { getAllPosts } from "@/lib/api";
+import PostBlock from "../components/post-block";
 
 export default function WorkPage() {
+    const allPosts = getAllPosts();
+
     return (
         <main>
         {/* Heading */}
@@ -21,17 +25,9 @@ export default function WorkPage() {
         <div className="w-full h-2 bg-accent"></div>
         {/* Project Gallery */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 p-10">
-            <a className="group md:block bg-secondary-gray bg-center md:bg-none bg-cover bg-[url('/../images/soft-eng/hero-page-cropped.png')] rounded-3xl overflow-clip border-4 border-text transition-shadow ease-linear hover:shadow-2xl duration-200" href="/work/hospital-app.html">
-                <Image src={HeroPage} className="hidden md:block h-48 w-full object-cover md:group-hover:saturate-150" alt="React Web App for Hospital"/>
-                <div className="flex flex-col px-3 py-3 gap-4 md:bg-opacity-100 bg-primary-gray bg-opacity-85">
-                    <div className="bg-primary rounded-lg border-2 border-r-text text-md font-bold font-heading w-fit px-2">
-                        Programming
-                    </div>
-                    <h2 className="font-heading font-bold text-2xl text-left leading-tight">
-                        React Web App for Hospital</h2>
-                    <p className="text-lg text-left -translate-y-2">A React-Typescript web app developed in CS3733 Software Engineering over 7 weeks.</p>
-                </div>
-            </a> 
+            {allPosts.map((post) => (
+                <PostBlock key={post.slug} post={post} />
+            ))}
             <a className="group md:block bg-primary-gray bg-center md:bg-none bg-cover bg-[url('/../images/wordleScreenshot.jpeg')] rounded-3xl overflow-clip border-4 border-text transition-shadow ease-linear hover:shadow-2xl duration-200" href="/work/your-wordle.html">
                 <Image src={WordleScreenshot} className="hidden md:block h-48 w-full object-cover md:group-hover:saturate-150" alt="Your Wordle Web App"/>
                 <div className="flex flex-col px-3 py-3 gap-4 md:bg-opacity-100 bg-primary-gray bg-opacity-85">
