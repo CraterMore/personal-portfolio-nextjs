@@ -11,7 +11,6 @@ type Params = {
   }>;
 };
 
-
 export default async function WorkPost(props: Params) {
     const params = await props.params;
     const post = getPostBySlug(params.slug);
@@ -28,4 +27,12 @@ export default async function WorkPost(props: Params) {
         <PostBody content={content} />
     </main>
   )
+}
+
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
