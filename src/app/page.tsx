@@ -20,9 +20,8 @@ export default function Home() {
                 <h1 className="font-heading font-bold text-4xl text-center md:text-left leading-tight mt-4">
                     Hi, my name is
                     <Image className="w-32 ml-4 -translate-y-1 inline" src={CarterWordmark} alt="Carter"/>
-                    </h1>
-                
-                <p className="text-xl text-center md:text-left">I am a senior at Worcester Polytechnic Institute majoring in Computer Science with a passion for graphic design. My interests include UX, software engineering, and design.</p>
+                </h1>
+                <p className="text-xl text-center md:text-left">I am a senior at Worcester Polytechnic Institute majoring in Computer Science with a passion for user-focused design. My interests include frontend software engineering, UI/UX design, and product design.</p>
                 <a className="btn-primary mb-4 transition ease-in-out duration-150 hover:-translate-y-1" href="/work">Learn more</a>
             </div>
         </section>

@@ -7,6 +7,7 @@ category: "Programming"
 date: "Spring 2024"
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"
+published: "05-15-2024"
 ---
 
 During the last quarter of my sophomore year at WPI, I completed a course named Software Engineering. The course was designed to teach students the basics of software development through a comprehensive team project. I served as Lead Software Engineer on an 11-person team to apply Agile development methodologies and software design patterns in the creation of a web application prototype running on the cloud for Brigham and Women's Hospital. The final software application prototype included hospital pathfinding, a map editor, multiple integrated service request modules, a personal taskboard, and a hospital inventory system.

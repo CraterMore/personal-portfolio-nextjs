@@ -8,6 +8,7 @@ date: "Summer 2023"
 tags: ["Database Management", "Web App Security", "User Authentication", "Routing"]
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"
+published: "07-01-2023"
 ---
 
 During COVID, it seemed like everybody's daily routine involved the mastermind-like word game Wordle. My whole family played the game and sent their scores everyday to each other which gave my grandfather an idea. He talked about a version of Wordle where the players can choose a day in the near future, and a 5-letter word, and everyone who plays Wordle on that day will be trying to guess that word. That's exactly what this game is! Players login, see who wrote the word of the day, play Wordle, and have the option to view their statistics and send their score.

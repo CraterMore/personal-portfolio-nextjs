@@ -2,6 +2,7 @@ export type Post = {
   slug: string;
   title: string;
   date: string;
+  published: string;
   coverImage: string;
   context: string;
   contextShort: string;
