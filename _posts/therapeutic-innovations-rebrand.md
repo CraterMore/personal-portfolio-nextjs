@@ -8,7 +8,7 @@ date: "2023"
 tags: ["Brand Development", "Communication", "Concept Presentation", "Creative Research"]
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"
-published: "12-12-2023"
+published: "2023-12-12"
 ---
 
 In 2023, I had the opportunity to help rebrand a medical device start-up that was founded by Professor Solomon Mensah from WPI. Therapeutic Innovations is reimagining and reengineering existing medical devices for use in underdeveloped countries around the world. Having already developed a brand identitiy for MeDHigh (Prof. Mensah's educational summer camp program at WPI), I was asked if I wanted to help with rebranding his medical device company as well. Together with Eli, Lisa, and Stephen from the marketing team, we were able to develop a comprehensive and impactful brand vision that fully encapsulated the company's values.

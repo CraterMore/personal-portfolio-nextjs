@@ -32,11 +32,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${figtree.variable} ${josefinSans.variable} antialiased max-w-screen-xl bg-background mx-auto`}
+        className={`${roboto.variable} ${figtree.variable} ${josefinSans.variable} antialiased`}
       >
         <Alert text="I created a website to track my recent travels. Check it out!" link="/travel"/>
         <NavBar/>
-        {children}
+        <main className="max-w-screen-xl bg-background mx-auto">
+          {children}
+        </main>
         <footer className="font-body text-center my-6">Created by Carter Moore</footer>
       </body>
     </html>

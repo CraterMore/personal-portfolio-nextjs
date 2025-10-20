@@ -7,6 +7,10 @@ export type Post = {
   context: string;
   contextShort: string;
   category: string;
+  button?: {
+    text: string;
+    link: string;
+  }
   ogImage: {
     url: string;
   };

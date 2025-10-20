@@ -23,6 +23,6 @@ export function getAllPosts(): Post[] {
   const posts = slugs
     .map((slug) => getPostBySlug(slug))
     // sort posts by date in descending order
-    .sort((post1, post2) => (post1.published.localeCompare(post2.published) ? 1 : -1));
+    .sort((post1, post2) => (post1.published > post2.published ? -1 : 1));
   return posts;
 }

@@ -21,7 +21,7 @@ export default function AboutPage() {
                     freelance graphic designer who enjoys branding projects and
                     product design. I would love to hear about your next project!
                 </p>
-                <a className="btn-primary mt-2 mb-5 transition ease-in-out duration-150 hover:-translate-y-1" href="./work">View Projects →</a>
+                <a className="btn-primary mt-2 mb-5 transition ease-in-out duration-150 hover:-translate-y-1" href="/work">View Projects →</a>
             </div>
         </div>
         <div className="w-full h-2 bg-accent"></div>

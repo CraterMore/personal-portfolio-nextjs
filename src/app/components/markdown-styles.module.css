@@ -11,6 +11,10 @@
   @apply md:text-[1.1rem] font-body mt-3;
 }
 
+.markdown a {
+  @apply text-accent underline hover:font-bold
+}
+
 .markdown h2 {
   @apply text-left font-heading font-bold text-2xl mt-6;
 }

@@ -1,12 +1,11 @@
 import Image from "next/image";
 import HomeImageSplash from "/public/images/HomeImageSplash.png";
-import HeroPage from "/public/images/soft-eng/hero-page.png";
+import HeroPage from "/public/images/ui-case-study/proposal-moodboard.jpg";
 import Github from "/public/images/github.png";
 import LinkedIn from "/public/images/linkedin.png";
 import Dribbble from "/public/images/dribbble-icon.svg";
 import Email from "/public/images/email.png";
 import Globe from "/public/images/globe.png";
-import NavBar from "./components/nav-bar";
 import CarterWordmark from "/public/carter-wordmark.svg";
 
 export default function Home() {
@@ -32,16 +31,16 @@ export default function Home() {
             Featured Work
         </div>
         <div className="md:flex flex-row justify-between px-10 md:my-6">
-            <div className="md:max-w-lg max-w-md mx-auto self-center md:mx-0 md:mr-4 md:my-8  p-2">
-                <Image className="w-full h-full object-contain -rotate-3" src={HeroPage} alt="React App for Hospital"/>
+            <div className="md:max-w-xl max-w-md mx-auto self-center md:mx-0 md:mr-4 md:my-8  p-2">
+                <Image className="w-full h-full object-contain -rotate-3 rounded-2xl" src={HeroPage} alt="Mobile App UI/UX Case Study"/>
             </div>
             <div className="flex flex-col self-center items-center md:items-start md:max-w-xl gap-3">
-                <h1 className="font-heading font-bold text-4xl text-center md:text-left leading-tight mt-4">React App for Hospital</h1>
-                <p className="text-xl text-center md:text-left mb-2">A React web app prototype that was developed in 7 weeks using Agile methodologies for Brigham and Women's Hospital. The project significantly improved my skills in web development, databases, UI/UX, and version control.</p>
+                <h1 className="font-heading font-bold text-4xl text-center md:text-left leading-tight mt-4 text-pretty">Mobile App UI/UX Case Study</h1>
+                <p className="text-xl text-center md:text-left mb-2">Exploring how to improve a specific problem domain in a 7-week project focused on mobile app interface design. Project research included interviews, A/B testing, prototyping, and usage of heuristics and UX laws.</p>
                 <div className="flex gap-2">
                     <a className="btn-primary mb-4 transition ease-in-out duration-150 hover:-translate-y-1" href="/work/react-hospital-app">Read more</a>
                 </div>
-                <p className="text-accent mb-4 text-center">React Web Development · Agile Methodology · Design Patterns · UI and UX</p>
+                <p className="text-accent mb-4 text-center">Qualitative Research · UI/UX Design · Figma Prototyping · Mobile Development</p>
             </div>
         </div>
         <div className="w-full h-2 bg-accent"></div>

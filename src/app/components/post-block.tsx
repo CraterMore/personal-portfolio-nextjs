@@ -2,7 +2,7 @@ import { Post } from "@/interfaces/post";
 
 export default function PostBlock({ post }: { post: Post }) {
     const backgroundColor = post.category === "Programming" ? "bg-primary" : "bg-secondary";
-    const backgroundColorGray = backgroundColor + "-gray";
+    const backgroundColorGray = post.category === "Programming" ? "bg-primary-gray" : "bg-secondary-gray";
     const backgroundImage = "bg-[url('" + post.coverImage + "')]";
 
   return (

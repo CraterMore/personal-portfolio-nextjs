@@ -1,4 +1,4 @@
-export default function PostHeader(props: { context: string, title: string, date: string, tags: string[] }) {
+export default function PostHeader(props: { context: string, title: string, date: string, tags: string[], button?: { text: string, link: string } }) {
   return (
     <header>
         <div className="flex flex-col items-center">
@@ -10,6 +10,11 @@ export default function PostHeader(props: { context: string, title: string, date
         <div className="w-full h-2 bg-accent"></div>
         {props.tags.length > 0 && (
           <p className="text-accent my-4 text-center">{props.tags.join(" · ")}</p>
+        )}
+        {props.button && (
+          <div className="flex justify-center mb-4">
+            <a className="btn-primary mt-2 transition ease-in-out duration-150 hover:-translate-y-1 h-fit" href={props.button.link}>{props.button.text}</a>
+          </div>
         )}
     </header>
   );

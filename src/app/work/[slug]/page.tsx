@@ -23,7 +23,7 @@ export default async function WorkPost(props: Params) {
 
   return (
     <main>
-        <PostHeader context={post.contextShort} title={post.title} date={post.date} tags={post.tags || []} />
+        <PostHeader context={post.contextShort} title={post.title} date={post.date} tags={post.tags || []} button={post.button} />
         <PostBody content={content} />
     </main>
   )
