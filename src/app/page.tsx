@@ -38,7 +38,7 @@ export default function Home() {
                 <h1 className="font-heading font-bold text-4xl text-center md:text-left leading-tight mt-4 text-pretty">Mobile App UI/UX Case Study</h1>
                 <p className="text-xl text-center md:text-left mb-2">Exploring how to improve a specific problem domain in a 7-week project focused on mobile app interface design. Project research included interviews, A/B testing, prototyping, and usage of heuristics and UX laws.</p>
                 <div className="flex gap-2">
-                    <a className="btn-primary mb-4 transition ease-in-out duration-150 hover:-translate-y-1" href="/work/react-hospital-app">Read more</a>
+                    <a className="btn-primary mb-4 transition ease-in-out duration-150 hover:-translate-y-1" href="/work/ui-case-study">Read more</a>
                 </div>
                 <p className="text-accent mb-4 text-center">Qualitative Research · UI/UX Design · Figma Prototyping · Mobile Development</p>
             </div>
